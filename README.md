@@ -52,3 +52,6 @@ There are three levels of testing contained in the project:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+=======
+# aem-company-profile
+This project is an app in Adobe Experience Manager (AEM) which helps employers to build there company's profile page quickly and easy to author or customize
