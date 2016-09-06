@@ -28,52 +28,7 @@
     
     <sly data-sly-resource="${'codingPractice' @ resourceType='aem-company-profile/components/content/checkList'}" data-sly-unwrap />
     
-    <section id="resume-jobs-block" class="bg-white">
-        <div class="container">
-            <h1 class="resume-section-title">
-						Our Jobs						<span class="under-line" style="background-color: #75B81B"></span>
-					</h1>
-            <div class="our-jobs">
-
-                <div class="job-listing full-screen">
-
-                    <h3>We Have 2 Jobs For You</h3>
-                    <div class="job-item" style="border-color: #75B81B">
-                        <div class="summary-info">
-
-                            <h4><a href="http://www.topit.vietnamworks.com/job/708421-devops-engineer-en" style="color: #75B81B" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;ansarada&#39;, &#39;click&#39;, &#39;CompanyCulture&#39;);" target="_blank">DevOps Engineer</a></h4>
-                            <ul>
-                                <li><i class="fa fa-briefcase"></i> Experienced (non-manager) </li>
-                                <li><i class="fa fa-map-marker"></i> Ho Chi Minh
-                                </li>
-                                <li><i class="fa fa-calendar-o"></i>23/08/2016</li>
-                            </ul>
-                        </div>
-                        <div class="view-detail">
-                            <a href="http://www.topit.vietnamworks.com/job/708421-devops-engineer-en" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;CompanyCulture&#39;, &#39;click&#39;, &#39;ansarada&#39;);" target="_blank">View</a>
-                        </div>
-                    </div>
-
-                    <div class="job-item" style="border-color: #75B81B">
-                        <div class="summary-info">
-
-                            <h4><a href="http://www.topit.vietnamworks.com/job/708416-interface-fe-engineer-en" style="color: #75B81B" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;ansarada&#39;, &#39;click&#39;, &#39;CompanyCulture&#39;);" target="_blank">Interface (FE) Engineer</a></h4>
-                            <ul>
-                                <li><i class="fa fa-briefcase"></i> Experienced (non-manager) </li>
-                                <li><i class="fa fa-map-marker"></i> Ho Chi Minh
-                                </li>
-                                <li><i class="fa fa-calendar-o"></i>23/08/2016</li>
-                            </ul>
-                        </div>
-                        <div class="view-detail">
-                            <a href="http://www.topit.vietnamworks.com/job/708416-interface-fe-engineer-en" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;CompanyCulture&#39;, &#39;click&#39;, &#39;ansarada&#39;);" target="_blank">View</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    <sly data-sly-resource="${'jobList' @ resourceType='aem-company-profile/components/content/jobList'}" data-sly-unwrap />
 
     <div class="social-share-toolbar">
         <div>
