@@ -30,18 +30,8 @@
     
     <sly data-sly-resource="${'jobList' @ resourceType='aem-company-profile/components/content/jobList'}" data-sly-unwrap />
 
-    <div class="social-share-toolbar">
-        <div>
-            <a class="ic-facebook" href="https://www.facebook.com/sharer/sharer.php?u=topit.vietnamworks.com/companies/company/ansarada/" target="_blank">
-                <i class="fa fa-facebook"></i>
-            </a>
-        </div>
-        <div><a class="ic-linkedIn" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=topit.vietnamworks.com/companies/company/ansarada/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <div>
-            <a href="https://twitter.com/home?status=topit.vietnamworks.com/companies/company/ansarada/" class="ic-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
-    </div>
+    <sly data-sly-resource="${'socialToolbar' @ resourceType='aem-company-profile/components/content/socialToolbar'}" data-sly-unwrap />
+
 
     <footer>
         <div class="container">
