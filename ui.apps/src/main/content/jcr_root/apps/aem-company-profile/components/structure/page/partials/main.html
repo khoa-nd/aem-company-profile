@@ -13,111 +13,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
-<div class="page__main" data-sly-use.main="main.js">
     <header class="page__header">
         <div class="page__logo" data-sly-resource="logo"></div>
         <nav class="page__topnav" data-sly-resource="topnav"></nav>
     </header>
+    
+    <sly data-sly-resource="${'companyInfo' @ resourceType='aem-company-profile/components/content/companyInfo'}" data-sly-unwrap />
 
-    <nav>
-        <div id="logo">
-            <a class="navbar-brand" href="http://topit.vietnamworks.com/"><img src="./ansarada in partnership with PYCOGROUP - Company Profile_files/logo.png" alt="" tille="topITworks">
-            </a>
-        </div>
-        <label for="drop" class="menu-navi toggle"><i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
-        </label>
-        <input type="checkbox" id="drop">
-        <ul class="menu" id="mainsite-menu">
-            <li class="button-dropdown">
-                <label for="drop-1" class="toggle">EVENTS <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </label>
-                <a href="javascript:void(0)" class="dropdown-toggle">EVENTS <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                <ul class="sub-menu" style="display: none;">
-                    <li><a href="http://topit.vietnamworks.com/academy?lang=en">ACADEMY</a>
-                    </li>
-                    <li><a href="http://topit.vietnamworks.com/techexpo?lang=en">TECH EXPO</a>
-                    </li>
-                    <li><a href="http://topit.vietnamworks.com/hackathon?lang=en">HACKATHON</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="http://topit.vietnamworks.com/keyword/tech-jobs-en">JOBS</a>
-            </li>
-            <li><a href="http://topit.vietnamworks.com/company-culture?lang=en">TOP COMPANIES</a>
-            </li>
-            <li class="button-dropdown">
-                <label for="drop-2" class="toggle">TOOLS <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </label>
-                <a href="javascript:void(0)" class="dropdown-toggle">TOOLS <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                <ul class="sub-menu" style="display: none;">
-                    <li><a href="http://topit.vietnamworks.com/state-of-agile-2015">TRENDS</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="http://topit.vietnamworks.com/blogs">BLOGS</a>
-            </li>
-            <li class="button-dropdown">
-                <label for="drop-2" class="toggle">SIGN IN <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </label>
-                <a href="javascript:void(0)" class="dropdown-toggle">SIGN IN <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                <ul class="sub-menu" style="display: none;">
-                    <li><a href="http://topit.vietnamworks.com/signin?lang=en">SIGN IN</a>
-                    </li>
-                    <li><a href="http://topit.vietnamworks.com/register?lang=en">REGISTER</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <section id="resume-cover-image" style="height: 641px; background: url(&quot;http://topit.vietnamworks.com/companies/wp-content/uploads/2016/07/ansarada-in-partnership-with-PYCOGROUP-cover.jpg&quot;) center top no-repeat;">
-
-        <div class="bannerText banner-company-info">
-            <div class="menu-nav-trigger">
-                <span class="zebra-line top"></span>
-                <span class="zebra-line middle"></span>
-                <span class="zebra-line bottom"></span>
-            </div>
-            <div class="company-info-block">
-                <span class="banner-hello">
-					<img src="./ansarada in partnership with PYCOGROUP - Company Profile_files/ansarada-in-partnership-with-PYCOGROUP-logo.png" alt="">
-				</span>
-                <div class="company-info-basic">
-                    <h1>
-						ansarada in partnership with PYCOGROUP					</h1>
-                    <ul>
-                        <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <p>
-                                Ho Chi Minh</p>
-                        </li>
-                        <li><span><i class="fa fa-tags" aria-hidden="true"></i></span>
-                            <p>
-                                IT - Software</p>
-                        </li>
-                        <li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                            <p>Product development</p>
-                        </li>
-                        <li><span><i class="fa fa-globe" aria-hidden="true"></i></span>
-                            <p>
-                                <a href="http://ansarada.com/" target="_blank" class="company-link">
-										ansarada.com</a>
-                            </p>
-                        </li>
-                        <!--					<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span> 17 Jobs</li>-->
-
-                    </ul>
-                    <span class="cover-resume-breadcrumbs">
-				<a href="http://topit.vietnamworks.com/companies/"><i class="fa fa-home"></i></a> <i class="fa fa-chevron-right"></i> <a href="http://topit.vietnamworks.com/companies//companies">Companies</a> <i class="fa fa-chevron-right"></i>  </span>
-                </div>
-            </div>
-        </div>
-        <div class="coverImageHolder" style="display:none">
-            <img src="./ansarada in partnership with PYCOGROUP - Company Profile_files/ansarada-in-partnership-with-PYCOGROUP-cover.jpg" alt="">
-        </div>
-
-    </section>
-
-
-    <section id="company-menu" style="background-color: #75B81B" class="fixed">
+    <section id="company-menu" style="background-color: #75B81B">
         <div class="container">
             <ul class="nav navbar-nav sroll-container-link">
                 <li class="menuItem"><a href="http://topit.vietnamworks.com/companies/company/ansarada/#topMenu"><i class="fa fa-home"></i>Home</a>
@@ -705,4 +608,3 @@
     <div class="backtop" style="display: block;">
         <a href="http://topit.vietnamworks.com/companies/company/ansarada/#backtop"><i class="fa fa-chevron-up"></i></a>
     </div>
-</div>
