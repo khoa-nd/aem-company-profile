@@ -55,6 +55,11 @@
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldLabel="Company Name"
                                 name="./companyName"/>
+                            <websiteUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Website URL"
+                                name="./websiteUrl"/>
                             <locations
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/multifield"
@@ -84,6 +89,26 @@
                                     </items>
                                 </field>
                             </locations>
+                            <businessType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Business Type"
+                                name="./businessType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <product
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Product"
+                                        value="product"/>
+                                    <outsourcing
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Outsourcing"
+                                        value="outsourcing"/>
+                                    <startup
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Start-Up"
+                                        value="startup"/>
+                                </items>
+                            </businessType>
                         </items>
                     </column>
                 </items>
@@ -91,10 +116,6 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
             </info>
-            <menu
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Menu"
-                sling:resourceType="granite/ui/components/foundation/container"/>
         </items>
     </content>
 </jcr:root>
