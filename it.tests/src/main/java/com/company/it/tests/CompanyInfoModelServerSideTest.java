@@ -18,36 +18,36 @@ package com.company.it.tests;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import com.company.core.models.CompanyInfoModel;
 import org.apache.sling.junit.annotations.SlingAnnotationsTestRunner;
 import org.apache.sling.junit.annotations.TestReference;
 import org.apache.sling.settings.SlingSettingsService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import com.company.core.models.HelloWorldModel;
 
 /** 
  *  Test case which uses OSGi services injection
- *  to get hold of the HelloWorldModelServerSideTest which 
+ *  to get hold of the CompanyInfoModelServerSideTest which
  *  it wants to test server-side. 
  */
 @RunWith(SlingAnnotationsTestRunner.class)
-public class HelloWorldModelServerSideTest {
+public class CompanyInfoModelServerSideTest {
 
-    @TestReference
-    private HelloWorldModel hello;
+//    @TestReference
+//    private CompanyInfoModel hello;
 
     @TestReference
     private SlingSettingsService settings;
 
     @Test
     public void testHelloWorldModelServerSide() throws Exception {
-        assertNotNull(
-                "Expecting HelloWorldModel to be injected by Sling test runner",
-                hello);
+//        assertNotNull(
+//                "Expecting CompanyInfoModel to be injected by Sling test runner",
+//                hello);
 
         assertNotNull("Expecting the slingsettings to be injected by Sling test runner", settings);
 
-        assertTrue("Expecting the HelloWorldModel to return the slingId as part of the message", 
-                hello.getMessage().contains(settings.getSlingId()));
+//        assertTrue("Expecting the CompanyInfoModel to return the slingId as part of the message",
+//                hello.getMessage().contains(settings.getSlingId()));
     }
 }
