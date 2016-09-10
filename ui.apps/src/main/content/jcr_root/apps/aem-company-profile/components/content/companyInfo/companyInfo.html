@@ -1,13 +1,12 @@
-<div>
+<div data-sly-use.companyInfo="com.company.core.wcmuse.CompanyInfo">
 
         <div>
             <div>
                 <span class="banner-hello">
-					<img src="./ansarada in partnership with PYCOGROUP - Company Profile_files/ansarada-in-partnership-with-PYCOGROUP-logo.png" alt="">
+					<img src="${companyInfo.logoImage}" alt="">
 				</span>
                 <div>
-                    <h1>
-						ansarada in partnership with PYCOGROUP					</h1>
+                    <h1>${companyInfo.companyName}</h1>
                     <ul>
                         <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                             <p>
